@@ -3,7 +3,6 @@
 <head>
   <title>Germany Top It</title>
 
-  <!-- 🔥 Favicon (Tab Icon) -->
   <link rel="icon" type="image/png" href="Your-paragraph-text.png">
 
   <style>
@@ -13,38 +12,54 @@
       background: url("4k-new-york.jpg") center/cover no-repeat;
     }
 
-    /* DARK BACKGROUND OVERLAY */
+    /* OVERLAY */
     .overlay {
       background: rgba(0,0,0,0.65);
       min-height: 100vh;
       padding: 20px;
-      text-align: center;
       color: white;
     }
 
-    /* LOGO */
-    .logo img {
-      width: 80px;
-      height: 80px;
+    /* HEADER (LEFT + RIGHT) */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+    }
+
+    /* LEFT SIDE */
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .left img {
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      margin-top: 10px;
       border: 2px solid white;
     }
 
-    /* TITLE */
-    h2 {
-      margin: 10px 0;
+    .site-info {
+      text-align: left;
     }
 
-    /* OWNER */
-    .name {
-      font-size: 18px;
-      margin-bottom: 15px;
+    .site-info h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .site-info p {
+      margin: 2px 0 0;
+      font-size: 14px;
+      opacity: 0.8;
     }
 
     /* MAIN BORDER BOX */
     .main-box {
-      width: 90%;
+      width: 92%;
       margin: 20px auto;
       border: 3px solid white;
       border-radius: 15px;
@@ -52,25 +67,26 @@
       background: rgba(0,0,0,0.45);
     }
 
-    /* MENU */
+    /* MENU (RIGHT SIDE STYLE) */
     .menu {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
+      justify-content: flex-end;
+      gap: 15px;
       border-bottom: 1px solid white;
       padding-bottom: 15px;
       margin-bottom: 20px;
     }
 
     .menu button {
-      padding: 10px 18px;
+      padding: 12px 20px;   /* 🔥 bigger buttons */
       border: none;
       border-radius: 8px;
       cursor: pointer;
       background: white;
       color: black;
       font-weight: bold;
+      font-size: 15px;
       transition: 0.3s;
     }
 
@@ -87,7 +103,6 @@
       margin: 10px auto;
       padding: 12px;
       border-radius: 10px;
-      text-align: left;
     }
 
     /* HOME DEFAULT */
@@ -101,23 +116,24 @@
 
 <div class="overlay">
 
-  <!-- 🔥 LOGO -->
-  <div class="logo">
-    <img src="Your-paragraph-text.png" alt="logo">
+  <!-- HEADER -->
+  <div class="header">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <img src="Your-paragraph-text.png">
+      <div class="site-info">
+        <h2>Germany Top It</h2>
+        <p>Owner: MD.ZUBAIR HOSSAIN</p>
+      </div>
+    </div>
+
   </div>
 
-  <!-- 🔥 TITLE -->
-  <h2>Germany Top It</h2>
-
-  <!-- 🔥 OWNER -->
-  <div class="name">
-    Owner: MD.ZUBAIR HOSSAIN
-  </div>
-
-  <!-- 🔥 MAIN BOX -->
+  <!-- MAIN BOX -->
   <div class="main-box">
 
-    <!-- MENU -->
+    <!-- MENU (RIGHT) -->
     <div class="menu">
       <button onclick="show('home')">Home</button>
       <button onclick="show('bank')">Bank</button>
@@ -133,11 +149,11 @@
     </div>
 
     <div id="bank" class="box">
-      Bank Accounts Content 🏦
+      Bank Accounts Section 🏦
     </div>
 
     <div id="crypto" class="box">
-      Crypto Accounts Content 💰
+      Crypto Accounts Section 💰
     </div>
 
     <div id="social" class="box">
