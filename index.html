@@ -81,10 +81,12 @@
   <div class="name">
     Owner: MD.ZUBAIR HOSSAIN
   </div>
+<!-- 🔥 MAIN WHITE BORDER BOX -->
+<div class="main-box">
 
-  <!-- 🔥 Categories -->
-  <div class="main-box">
+  <!-- MENU -->
   <div class="menu">
+    <button onclick="home()">Home</button>
     <button onclick="show('bank')">Bank</button>
     <button onclick="show('crypto')">Crypto</button>
     <button onclick="show('social')">Social</button>
@@ -92,43 +94,46 @@
     <button onclick="show('review')">Review</button>
   </div>
 
-  <!-- 🔥 Content -->
+  <!-- HOME -->
+  <div id="home" class="box">
+    Welcome to Home Page
+  </div>
+
+  <!-- CONTENT -->
   <div id="bank" class="box">
-    <p>Buy Verified Cash App Accounts</p>
-    <p>Buy verified Paysera Accounts</p>
+    Bank Accounts Content
   </div>
 
   <div id="crypto" class="box">
-    <p>Buy Verified Binance Accounts</p>
-    <p>Buy Verified PayPal Accounts</p>
-    
+    Crypto Content
   </div>
 
   <div id="social" class="box">
-    <p>Buy Old TikTok Accounts</p>
-    <p>Buy USA Facebook Accounts</p>
-    <p>Buy Old Instagram Accounts</p>
+    Social Media Content
   </div>
 
   <div id="email" class="box">
-    <p>Buy USA Old Gmail Accounts</p>
+    Email Accounts Content
   </div>
 
   <div id="review" class="box">
-    <p>Review 1</p>
+    Review Section
   </div>
 
 </div>
 
+<!-- 🔥 SCRIPT (শেষে বসাবে) -->
 <script>
 function show(id){
   let boxes = document.querySelectorAll(".box");
-
   boxes.forEach(b => b.style.display = "none");
   document.getElementById(id).style.display = "block";
 }
-</script>
 
-</body>
-</html>
+function home(){
+  let boxes = document.querySelectorAll(".box");
+  boxes.forEach(b => b.style.display = "none");
+  document.getElementById("home").style.display = "block";
+}
+</script>
  
