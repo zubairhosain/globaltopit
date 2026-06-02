@@ -3,15 +3,129 @@
 <head>
   <title>Germany Top It</title>
 
-  <!-- 🔥 Tab logo -->
+  <!-- 🔥 Tab Icon (Favicon) -->
   <link rel="icon" href="Your-paragraph-text.png">
 
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: url(4k-new-york.jpg)center center/cover;
+
+      /* 🔥 Background image */
+      background: url("4k-new-york.jpg") center/cover no-repeat;
     }
 
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
 
+    /* Logo */
+    .logo img {
+      width: 90px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    /* Name */
+    .name {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    /* Menu box */
+    .menu {
+      margin-top: 20px;
+      padding: 10px;
+      border: 2px solid white;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    .menu button {
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* Content box */
+    .box {
+      display: none;
+      background: white;
+      color: black;
+      width: 280px;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <!-- 🔥 Website Logo -->
+  <div class="logo">
+    <img src="Your-paragraph-text.png">
+  </div>
+
+  <!-- 🔥 Website Name -->
+  <h2>Germany Top It</h2>
+
+  <!-- 🔥 Person Name -->
+  <div class="name">
+    Owner: John Doe
+  </div>
+
+  <!-- 🔥 Categories -->
+  <div class="menu">
+    <button onclick="show('bank')">Bank</button>
+    <button onclick="show('crypto')">Crypto</button>
+    <button onclick="show('social')">Social</button>
+    <button onclick="show('email')">Email</button>
+    <button onclick="show('review')">Review</button>
+  </div>
+
+  <!-- 🔥 Content -->
+  <div id="bank" class="box">
+    <p>Bank Account 1</p>
+    <p>Bank Account 2</p>
+  </div>
+
+  <div id="crypto" class="box">
+    <p>Crypto Info 1</p>
+  </div>
+
+  <div id="social" class="box">
+    <p>Social Account 1</p>
+  </div>
+
+  <div id="email" class="box">
+    <p>Email 1</p>
+  </div>
+
+  <div id="review" class="box">
+    <p>Review 1</p>
+  </div>
+
+</div>
+
+<script>
+function show(id){
+  let boxes = document.querySelectorAll(".box");
+
+  boxes.forEach(b => b.style.display = "none");
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>
  
