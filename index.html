@@ -1,73 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Social Media Website</title>
 
   <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+
+      /* 🔥 এখানে তোমার 4K background বসাবে */
+      background: url("background.jpg") no-repeat center center/cover;
+    }
+
+    /* Dark overlay */
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    /* Header */
+    .header {
+      padding: 20px;
+    }
+
+    .header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    .header h1 {
+      margin: 10px 0 0;
+      font-size: 28px;
+    }
+
+    /* Menu buttons */
     .menu {
-      background: #f2f2f2;
-      padding: 10px;
+      margin-top: 20px;
     }
 
-    .menu a {
-      margin-right: 15px;
-      text-decoration: none;
-      font-size: 18px;
-      color: blue;
+    .menu button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 14px;
     }
 
+    /* Content box */
     .box {
       display: none;
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid #ccc;
+      background: white;
+      color: black;
+      width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: left;
     }
   </style>
 </head>
 
 <body>
 
-<h1>My Website</h1>
+<div class="overlay">
 
-<!-- 🔥 Social Media Category -->
-<h2 onclick="showMenu()">Social Media Accounts (Click)</h2>
+  <!-- 🔥 Logo + Name -->
+  <div class="header">
+    <img src="logo.png" alt="Logo">
+    <h1>My Social Website</h1>
+  </div>
 
-<div class="menu" id="menu">
-  <a onclick="show('facebook')">Facebook</a>
-  <a onclick="show('instagram')">Instagram</a>
-  <a onclick="show('tiktok')">TikTok</a>
-</div>
+  <!-- 🔥 Categories -->
+  <div class="menu">
+    <button onclick="show('facebook')">Facebook</button>
+    <button onclick="show('instagram')">Instagram</button>
+    <button onclick="show('tiktok')">TikTok</button>
+    <button onclick="show('all')">All</button>
+  </div>
 
-<!-- 🔥 Content -->
-<div id="facebook" class="box">
-  <h3>Facebook Article</h3>
-  <p>Facebook সম্পর্কে লেখা এখানে থাকবে</p>
-</div>
+  <!-- 🔥 Facebook -->
+  <div id="facebook" class="box">
+    <h3>Facebook Accounts</h3>
+    <p>👉 FB Account 1</p>
+    <p>👉 FB Account 2</p>
+    <p>👉 FB Account 3</p>
+  </div>
 
-<div id="instagram" class="box">
-  <h3>Instagram Article</h3>
-  <p>Instagram সম্পর্কে লেখা এখানে থাকবে</p>
-</div>
+  <!-- 🔥 Instagram -->
+  <div id="instagram" class="box">
+    <h3>Instagram Accounts</h3>
+    <p>👉 IG Account 1</p>
+    <p>👉 IG Account 2</p>
+    <p>👉 IG Account 3</p>
+  </div>
 
-<div id="tiktok" class="box">
-  <h3>TikTok Article</h3>
-  <p>TikTok সম্পর্কে লেখা এখানে থাকবে</p>
+  <!-- 🔥 TikTok -->
+  <div id="tiktok" class="box">
+    <h3>TikTok Accounts</h3>
+    <p>👉 TT Account 1</p>
+    <p>👉 TT Account 2</p>
+    <p>👉 TT Account 3</p>
+  </div>
+
 </div>
 
 <script>
-function showMenu() {
-  document.getElementById("menu").style.display = "block";
-}
-
 function show(id) {
   let boxes = document.querySelectorAll(".box");
 
-  boxes.forEach(box => {
-    box.style.display = "none";
-  });
-
-  document.getElementById(id).style.display = "block";
+  if (id === "all") {
+    boxes.forEach(b => b.style.display = "block");
+  } else {
+    boxes.forEach(b => b.style.display = "none");
+    document.getElementById(id).style.display = "block";
+  }
 }
 </script>
 
