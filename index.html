@@ -1,219 +1,161 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Germany Top IT</title><link rel="icon" type="image/png" href="Your-paragraph-text.png"><style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+<title>Zubair Website</title>
 
+<!-- FAVICON -->
+<link rel="icon" type="image/png" href="Your-paragraph-text.png">
+
+<style>
 body{
-background:url("4k-new-york.jpg") center center/cover no-repeat fixed;
-min-height:100vh;
-color:white;
+    margin:0;
+    font-family:Arial;
+    color:white;
+    background:url("4k-new-york.jpg") no-repeat center center fixed;
+    background-size:cover;
 }
 
+/* OVERLAY */
 .overlay{
-background:rgba(0,0,0,0.65);
-min-height:100vh;
+    min-height:100vh;
+    background:rgba(0,0,0,0.55);
 }
 
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 50px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(8px);
-border-bottom:1px solid rgba(255,255,255,0.3);
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    border-bottom:2px solid white;
 }
 
-.logo-section{
-display:flex;
-align-items:center;
-gap:15px;
+.logo{
+    border:1px solid white;
+    padding:6px 10px;
+    font-weight:bold;
 }
 
-.logo-section img{
-width:65px;
-height:65px;
-border-radius:50%;
-border:2px solid white;
+.title{
+    font-size:20px;
+    font-weight:bold;
 }
 
-.site-text h2{
-font-size:26px;
-}
-
-.site-text p{
-font-size:14px;
-opacity:.8;
-}
-
+/* MENU */
 .menu{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
+    display:flex;
+    gap:12px;
+    padding:12px 40px;
+    border-bottom:1px solid white;
+    flex-wrap:wrap;
 }
 
-.menu button{
-padding:12px 18px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-background:white;
-color:black;
-transition:.3s;
+.menu a{
+    color:white;
+    text-decoration:none;
+    border:1px solid white;
+    padding:6px 12px;
 }
 
-.menu button:hover{
-transform:translateY(-2px);
+.menu a:hover{
+    background:white;
+    color:black;
 }
 
+/* HERO */
 .hero{
-height:70vh;
-display:flex;
-align-items:center;
-padding:0 60px;
+    text-align:center;
+    margin-top:25px;
 }
 
-.hero-content{
-max-width:650px;
+.hero img{
+    width:280px;
+    border:2px solid white;
+    border-radius:8px;
 }
 
-.hero-content h1{
-font-size:58px;
-line-height:1.2;
-margin-bottom:20px;
+/* CONTENT */
+.content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    padding:30px 40px;
 }
 
-.hero-content p{
-font-size:20px;
-margin-bottom:25px;
+.box{
+    border:1px solid white;
+    padding:15px;
+    background:rgba(0,0,0,0.4);
+    border-radius:6px;
 }
 
-.hero-btn{
-display:inline-block;
-padding:15px 35px;
-background:#ff2f92;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+.box h3{
+    border-bottom:1px solid white;
+    padding-bottom:6px;
 }
 
-.hero-btn:hover{
-opacity:.9;
-}
-
-.content-box{
-width:92%;
-margin:20px auto;
-background:rgba(255,255,255,.08);
-border:2px solid rgba(255,255,255,.4);
-border-radius:15px;
-padding:20px;
-}
-
-.page{
-display:none;
-background:white;
-color:black;
-padding:20px;
-border-radius:10px;
-}
-
-#home{
-display:block;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.card{
-background:rgba(255,255,255,.12);
-border:1px solid rgba(255,255,255,.3);
-padding:20px;
-border-radius:12px;
-text-align:center;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
+/* FOOTER */
 .footer{
-text-align:center;
-padding:25px;
-margin-top:30px;
-border-top:1px solid rgba(255,255,255,.3);
+    text-align:center;
+    padding:15px;
+    border-top:1px solid white;
+    margin-top:20px;
 }
+</style>
+</head>
 
-@media(max-width:768px){
+<body>
 
-.navbar{
-flex-direction:column;
-gap:15px;
-padding:20px;
-}
+<div class="overlay">
 
-.hero{
-padding:20px;
-height:auto;
-}
+    <div class="header">
+        <div class="logo">ZB</div>
+        <div class="title">Zubair Office Website</div>
+    </div>
 
-.hero-content h1{
-font-size:36px;
-}
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">iPhone</a>
+        <a href="#">Social Media</a>
+        <a href="#">Bank</a>
+        <a href="#">Email</a>
+    </div>
 
-.menu{
-justify-content:center;
-}
-}
-</style></head><body><div class="overlay"><div class="navbar"><div class="logo-section">
-<img src="Your-paragraph-text.png" alt="Logo">
-<div class="site-text">
-<h2>Germany Top IT</h2>
-<p>Owner: MD.ZUBAIR HOSSAIN</p>
+    <div class="hero">
+        <img src="Your-paragraph-text.png" alt="post">
+    </div>
+
+    <div class="content">
+
+        <div class="box">
+            <h3>iPhone Posts</h3>
+            <p>Latest iPhone content</p>
+        </div>
+
+        <div class="box">
+            <h3>Social Media</h3>
+            <p>Facebook, Instagram, TikTok</p>
+        </div>
+
+        <div class="box">
+            <h3>Bank Accounts</h3>
+            <p>All bank info here</p>
+        </div>
+
+        <div class="box">
+            <h3>Email</h3>
+            <p>example@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Zubair Website
+    </div>
+
 </div>
-</div><div class="menu">
-<button onclick="showPage('home')">Home</button>
-<button onclick="showPage('bank')">Bank</button>
-<button onclick="showPage('crypto')">Crypto</button>
-<button onclick="showPage('social')">Social</button>
-<button onclick="showPage('email')">Email</button>
-<button onclick="showPage('review')">Review</button>
-</div></div><section class="hero">
-<div class="hero-content">
-<h1>
-Germany Top IT<br>
-Premium Digital<br>
-Account Services
-</h1><p>
-Trusted source for Bank, Crypto, Social Media and Email Accounts.
-</p><a href="#" class="hero-btn">VISIT SHOP</a>
 
-</div>
-</section><div class="content-box"><div id="home" class="page">
-<h2>Welcome To Germany Top IT</h2>
-<p>Your trusted marketplace for premium digital accounts.</p>
-</div><div id="bank" class="page">
-<h2>Bank Accounts</h2>
-<p>Verified bank account section.</p>
-</div><div id="crypto" class="page">
-<h2>Crypto Accounts</h2>
-<p>Crypto account section.</p>
-</div><div id="social" class="page">
-<h2>Social Media Accounts</h2>
-<p>Facebook, TikTok, Instagram and more.</p>
-</div><div id="email" class="page">
-<h2>Email Accounts</h2>
-<p>Gmail, Outlook and other email services.</p>
+</body>
+</html>
