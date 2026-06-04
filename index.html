@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Germany Top It</title>
 
-<!-- FAVICON -->
 <link rel="icon" type="image/png" href="Your-paragraph-text.png">
-<link rel="shortcut icon" href="Your-paragraph-text.png">
 
 <style>
 *{
@@ -17,64 +15,58 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
-/* BODY */
 body{
 background:#000;
-color:white;
+color:#fff;
 }
 
 /* TOP BAR */
 .top-bar{
 background:#0066cc;
-padding:10px 50px;
 display:flex;
 justify-content:flex-end;
-gap:30px;
+gap:25px;
+padding:10px 40px;
 font-size:14px;
 }
 
 /* NAVBAR */
 .navbar{
 background:#fff;
-height:85px;
 display:flex;
 align-items:center;
-padding:0 60px;
+justify-content:space-between;
+padding:15px 40px;
 }
 
-/* LOGO AREA (slightly right) */
+/* LOGO */
 .logo-area{
 display:flex;
 align-items:center;
-gap:15px;
-margin-left:20px;
+gap:12px;
 }
 
 .logo-area img{
-width:55px;
-height:55px;
+width:50px;
+height:50px;
 object-fit:contain;
 }
 
 .logo-area h2{
 color:#111;
-font-size:28px;
-font-weight:bold;
+font-size:24px;
 }
 
-/* MENU (right aligned) */
+/* MENU */
 .menu{
 display:flex;
-gap:35px;
-margin-left:auto;
-margin-right:40px;
+gap:25px;
 }
 
 .menu a{
 text-decoration:none;
 color:#111;
 font-weight:600;
-transition:0.3s;
 }
 
 .menu a:hover{
@@ -83,155 +75,49 @@ color:#0066cc;
 
 /* HERO */
 .hero{
-height:700px;
+min-height:600px;
 background:
-linear-gradient(rgba(0,80,180,.75),rgba(0,80,180,.75)),
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url('4k-new-york.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-justify-content:space-between;
-padding:0 90px;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
 }
 
-.hero-text{
-width:50%;
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
 }
 
-.hero-text h1{
-font-size:65px;
-font-weight:bold;
+.hero p{
+max-width:700px;
+margin:auto;
+font-size:18px;
 margin-bottom:20px;
 }
 
-.hero-text p{
-font-size:18px;
-line-height:1.8;
-max-width:700px;
-margin-bottom:30px;
-}
-
 .btn{
+padding:12px 25px;
+border:none;
 background:#ff00aa;
 color:#fff;
-padding:15px 35px;
-border:none;
-border-radius:8px;
-font-size:18px;
+border-radius:6px;
 cursor:pointer;
 }
 
-/* COUNTER */
-.counter{
-margin-top:40px;
-display:flex;
+/* RESPONSIVE */
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
 gap:15px;
 }
 
-.box{
-background:rgba(255,255,255,.15);
-padding:20px;
-width:120px;
-text-align:center;
-border-radius:8px;
-backdrop-filter:blur(5px);
-}
-
-.box h3{
-font-size:32px;
-}
-
-/* HERO IMAGE */
-.hero-image{
-width:40%;
-text-align:center;
-}
-
-.hero-image img{
-width:100%;
-max-width:500px;
-}
-
-/* SERVICES */
-.services{
-background:#fff;
-color:#111;
-padding:80px 30px;
-text-align:center;
-}
-
-.services h2{
-font-size:45px;
-margin-bottom:40px;
-color:#0066cc;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-padding:25px;
-border:1px solid #ddd;
-border-radius:10px;
-}
-
-/* FOOTER */
-footer{
-background:#111;
-padding:25px;
-text-align:center;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-
-.hero{
-flex-direction:column;
-height:auto;
-padding:60px 25px;
-}
-
-.hero-text,
-.hero-image{
-width:100%;
-text-align:center;
-}
-
-.hero-text h1{
-font-size:45px;
-}
-
-.counter{
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.service-grid{
-grid-template-columns:1fr;
-}
-
-.navbar{
-flex-direction:column;
-height:auto;
-padding:20px;
-}
-
 .menu{
-margin-top:15px;
 flex-wrap:wrap;
-justify-content:center;
-margin-left:0;
-margin-right:0;
-}
-
-.logo-area{
-margin-left:0;
 justify-content:center;
 }
 }
@@ -240,15 +126,35 @@ justify-content:center;
 
 <body>
 
-<!-- TOP BAR -->
 <div class="top-bar">
 <span>Telegram: @GermanyTopIt</span>
 <span>Email: germanytopit@gmail.com</span>
 </div>
 
-<!-- NAVBAR -->
 <nav class="navbar">
 
 <div class="logo-area">
 <img src="Your-paragraph-text.png" alt="">
-<h2
+<h2>Germany Top It</h2>
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Bank Accounts</a>
+<a href="#">Crypto Accounts</a>
+<a href="#">Social Accounts</a>
+<a href="#">Shop</a>
+</div>
+
+</nav>
+
+<section class="hero">
+<div>
+<h1>Welcome To Germany Top It</h1>
+<p>Secure digital services worldwide including accounts and online solutions.</p>
+<button class="btn">VISIT SHOP</button>
+</div>
+</section>
+
+</body>
+</html>
