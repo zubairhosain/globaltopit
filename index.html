@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Germany Top It</title>
 
-<!-- ✅ FIXED FAVICON (USING YOUR IMAGE) -->
+<!-- FAVICON -->
 <link rel="icon" type="image/png" href="Your-paragraph-text.png">
-<link rel="shortcut icon" href="Your-paragraph-text.png" type="image/png">
+<link rel="shortcut icon" href="Your-paragraph-text.png">
 
 <style>
 *{
@@ -21,11 +17,13 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
+/* BODY */
 body{
 background:#000;
 color:white;
 }
 
+/* TOP BAR */
 .top-bar{
 background:#0066cc;
 padding:10px 50px;
@@ -35,19 +33,21 @@ gap:30px;
 font-size:14px;
 }
 
+/* NAVBAR */
 .navbar{
 background:#fff;
 height:85px;
 display:flex;
 align-items:center;
-justify-content:space-between;
 padding:0 60px;
 }
 
+/* LOGO AREA (slightly right) */
 .logo-area{
 display:flex;
 align-items:center;
 gap:15px;
+margin-left:20px;
 }
 
 .logo-area img{
@@ -62,22 +62,26 @@ font-size:28px;
 font-weight:bold;
 }
 
+/* MENU (right aligned) */
 .menu{
 display:flex;
 gap:35px;
+margin-left:auto;
+margin-right:40px;
 }
 
 .menu a{
 text-decoration:none;
 color:#111;
 font-weight:600;
-transition:.3s;
+transition:0.3s;
 }
 
 .menu a:hover{
 color:#0066cc;
 }
 
+/* HERO */
 .hero{
 height:700px;
 background:
@@ -118,6 +122,7 @@ font-size:18px;
 cursor:pointer;
 }
 
+/* COUNTER */
 .counter{
 margin-top:40px;
 display:flex;
@@ -137,6 +142,7 @@ backdrop-filter:blur(5px);
 font-size:32px;
 }
 
+/* HERO IMAGE */
 .hero-image{
 width:40%;
 text-align:center;
@@ -147,6 +153,7 @@ width:100%;
 max-width:500px;
 }
 
+/* SERVICES */
 .services{
 background:#fff;
 color:#111;
@@ -174,12 +181,14 @@ border:1px solid #ddd;
 border-radius:10px;
 }
 
+/* FOOTER */
 footer{
 background:#111;
 padding:25px;
 text-align:center;
 }
 
+/* RESPONSIVE */
 @media(max-width:900px){
 
 .hero{
@@ -217,48 +226,29 @@ padding:20px;
 margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
+margin-left:0;
+margin-right:0;
 }
 
+.logo-area{
+margin-left:0;
+justify-content:center;
+}
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="top-bar">
 <span>Telegram: @GermanyTopIt</span>
 <span>Email: germanytopit@gmail.com</span>
 </div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 
 <div class="logo-area">
 <img src="Your-paragraph-text.png" alt="">
-<h2>Germany Top It</h2>
-</div>
-
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Bank Accounts</a>
-<a href="#">Crypto Accounts</a>
-<a href="#">Social Accounts</a>
-<a href="#">Shop</a>
-</div>
-
-</nav>
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>Welcome To Germany Top It</h1>
-
-<p>
-Need verified social accounts, bank accounts, crypto accounts
-and digital services? Germany Top It provides secure and trusted
-online account solutions for customers worldwide.
-</p>
-
-<button class="btn">VISIT SHOP</button>
-
-</div>
+<h2
