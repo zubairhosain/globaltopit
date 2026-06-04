@@ -1,197 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Germany Top It</title>
-
-<link rel="icon" href="Your-paragraph-text.png">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#000;
-color:#fff;
-}
-
-/* TOP BAR (RIGHT SIDE BUT NOT CORNER) */
-.top-bar{
-background:#0066cc;
-display:flex;
-justify-content:flex-end;
-gap:25px;
-padding:12px 80px; /* 👉 more space from edges */
-font-size:14px;
-}
-
-/* MAIN WRAPPER (GIVES SIDE SPACE) */
-.container{
-max-width:1200px;
-margin:auto;
-}
-
-/* NAVBAR */
-.navbar{
-background:#fff;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:12px 80px; /* 👉 more side gap */
-}
-
-/* LOGO */
-.logo-area{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.logo-area img{
-width:50px;
-height:50px;
-object-fit:contain;
-}
-
-.logo-area h2{
-color:#111;
-font-size:24px;
-font-weight:bold;
-}
-
-/* MENU */
-.menu{
-display:flex;
-gap:25px;
-}
-
-.menu a{
-text-decoration:none;
-color:#111;
-font-weight:600;
-}
-
-.menu a:hover{
-color:#0066cc;
-}
-
-/* HERO WITH BLUE WATERMARK OVERLAY */
-.hero{
-min-height:100vh;
-position:relative;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:60px 20px;
-
-/* image */
-background:url('4k-new-york.jpg') center/cover no-repeat;
-}
-
-/* BLUE OVERLAY */
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0, 80, 180, 0.55); /* 👉 blue watermark */
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:800px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-color:#fff;
-}
-
-.hero p{
-font-size:18px;
-margin-bottom:20px;
-color:#fff;
-}
-
-.btn{
-padding:12px 25px;
-border:none;
-background:#ff00aa;
-color:#fff;
-border-radius:6px;
-cursor:pointer;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-.navbar{
-flex-direction:column;
-gap:15px;
-padding:15px 20px;
-}
-
-.menu{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.top-bar{
-justify-content:center;
-padding:10px 20px;
-}
-
-.hero h1{
-font-size:35px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<!-- TOP BAR -->
-<div class="top-bar">
-<span>Telegram: @GermanyTopIt</span>
-<span>Email: germanytopit@gmail.com</span>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar container">
-
-<div class="logo-area">
-<img src="Your-paragraph-text.png" alt="">
-<h2>Germany Top It</h2>
-</div>
-
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Bank Accounts</a>
-<a href="#">Crypto Accounts</a>
-<a href="#">Social Accounts</a>
-<a href="#">Shop</a>
-</div>
-
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-<div class="hero-content">
-<h1>Welcome To Germany Top It</h1>
-<p>Secure digital services worldwide with trusted support and verified accounts.</p>
-<button class="btn">VISIT SHOP</button>
+<div class="reviews">
+<div class="review">Great service and fast delivery</div>
+<div class="review">Very professional team</div>
+<div class="review">Highly recommended</div>
 </div>
 </section>
+
+<!-- PAYMENT -->
+<section class="section dark">
+<h2>Payment Methods</h2>
+
+<div class="payments">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/PayPal_2014_logo.svg">
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<h2>Contact Us</h2>
+<div class="contact">
+<p>Telegram: @GermanyTopIt</p>
+<p>Email: germanytopit@gmail.com</p>
+<p>24/7 Support Available</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+Copyright © 2026 Germany Top It
+</footer>
 
 </body>
 </html>
