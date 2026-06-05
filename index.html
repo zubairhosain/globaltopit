@@ -213,15 +213,31 @@ font-size:35px;
 <a href="#">Social Accounts ⌵</a>
 <a href="#">Shop</a>
 
-<a href="/cart">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="black">
-    <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45C8.52 17.37 9.48 19 11 19h9v-2h-9l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 23 6H7.21z"/>
-</svg>
-</a>
-        
-</div>
+<a href="/cart" style="position:relative; display:inline-block; text-decoration:none;">
 
-</div>
+    <!-- Cart Icon (SVG) -->
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#000">
+        <path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45C8.52 17.37 9.48 19 11 19h9v-2h-9l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 23 6H7.21z"/>
+    </svg>
+
+    <!-- Badge (0) -->
+    <span style="
+        position:absolute;
+        top:-6px;
+        right:-8px;
+        background:#0066cc;
+        color:white;
+        font-size:10px;
+        width:16px;
+        height:16px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:50%;
+        font-weight:600;
+    ">
+        0
+    </span>
 </a>
 
 </div>
