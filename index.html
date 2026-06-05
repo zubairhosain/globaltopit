@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Top It</title>
 
-<link rel="icon" href="Your-paragraph-text.png">
-
 <style>
 *{
 margin:0;
@@ -15,30 +13,47 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
-/* 🔵 TOP BAR */
+/* =========================
+   🔵 FLEX CONTROL SYSTEM
+   ========================= */
+
+/* left / center / right control */
+.row{
+display:flex;
+align-items:center;
+}
+
+.space-between{justify-content:space-between;}
+.flex-start{justify-content:flex-start;}
+.flex-end{justify-content:flex-end;}
+.center{justify-content:center;}
+
+/* spacing control */
+.gap-10{gap:10px;}
+.gap-20{gap:20px;}
+.gap-30{gap:30px;}
+
+.px-50{padding:0 50px;}
+.px-100{padding:0 100px;}
+.px-150{padding:0 150px;}
+
+.py-10{padding:10px 0;}
+.py-20{padding:20px 0;}
+.py-30{padding:30px 0;}
+
+/* =========================
+   TOP BAR
+   ========================= */
+
 .top-bar{
 background:#0066cc;
 color:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 100px;
 font-size:15px;
-}
-
-/* WRAPPER */
-.container{
-max-width:1200px;
-margin:auto;
 }
 
 /* NAVBAR */
 .navbar{
 background:#fff;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 100px;
 border-bottom:1px solid #eee;
 }
 
@@ -47,13 +62,11 @@ border-bottom:1px solid #eee;
 display:flex;
 align-items:center;
 gap:12px;
-margin-left:-15px;
 }
 
 .logo-area img{
 width:45px;
 height:45px;
-object-fit:contain;
 }
 
 .logo-area h2{
@@ -65,7 +78,7 @@ font-weight:500;
 .menu{
 display:flex;
 align-items:center;
-gap:28px;
+gap:25px;
 }
 
 .menu a{
@@ -109,21 +122,13 @@ background:rgba(0,80,180,0.55);
 position:relative;
 z-index:2;
 max-width:800px;
-}
-
-.hero h1{
-font-size:55px;
 color:#fff;
-margin-bottom:15px;
 }
 
-.hero p{
-font-size:18px;
-color:#fff;
-margin-bottom:20px;
-}
-
+.hero h1{font-size:55px;}
+.hero p{font-size:18px; margin-top:10px;}
 .btn{
+margin-top:20px;
 padding:12px 25px;
 background:#ff00aa;
 color:#fff;
@@ -134,17 +139,7 @@ cursor:pointer;
 
 /* RESPONSIVE */
 @media(max-width:768px){
-.top-bar,
-.navbar{
-flex-direction:column;
-padding:15px 20px;
-text-align:center;
-gap:10px;
-}
-
-.hero h1{
-font-size:35px;
-}
+.hero h1{font-size:35px;}
 }
 </style>
 </head>
@@ -152,28 +147,24 @@ font-size:35px;
 <body>
 
 <!-- 🔵 TOP BAR -->
-<div class="top-bar">
+<div class="top-bar row space-between px-100 py-20">
 
     <div>
         Trusted Global Service with Verified USA Accounts
     </div>
 
-    <div style="display:flex; gap:15px; align-items:center;">
-
-        <a href="https://t.me/smmpvaexpertts" target="_blank" style="color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
+    <div class="row gap-20">
+        <a href="https://t.me/smmpvaexpertts" style="color:#fff; text-decoration:none;">
             Telegram: @GlobalTopIt
         </a>
 
-        <span>
-            Email: Globaltopit@gmail.com
-        </span>
-
+        <span>Email: Globaltopit@gmail.com</span>
     </div>
 
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar container">
+<nav class="navbar row space-between px-100 py-20">
 
     <div class="logo-area">
         <img src="Your-paragraph-text.png">
@@ -188,8 +179,7 @@ font-size:35px;
         <a href="#">Social Accounts ⌵</a>
         <a href="#">Shop</a>
 
-        <!-- CART -->
-        <a href="/cart" style="position:relative; display:inline-block;">
+        <a href="/cart" style="position:relative;">
             <img src="add-to-cart.png">
 
             <span style="
@@ -205,7 +195,6 @@ font-size:35px;
                 align-items:center;
                 justify-content:center;
                 border-radius:50%;
-                font-weight:600;
             ">
                 0
             </span>
