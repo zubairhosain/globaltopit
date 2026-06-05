@@ -15,19 +15,14 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
-body{
-background:#fff;
-color:#000;
-}
-
-/* 🔵 TOP BAR (FIXED + THICK) */
+/* 🔵 TOP BAR */
 .top-bar{
 background:#0066cc;
 color:#fff;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:25px 120px;
+padding:25px 100px;
 font-size:15px;
 }
 
@@ -41,9 +36,9 @@ margin:auto;
 .navbar{
 background:#fff;
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:30px 180px;
+align-items:center;
+padding:20px 100px;
 border-bottom:1px solid #eee;
 }
 
@@ -51,17 +46,17 @@ border-bottom:1px solid #eee;
 .logo-area{
 display:flex;
 align-items:center;
-gap:10px;
+gap:12px;
 }
 
 .logo-area img{
-width:50px;
-height:50px;
+width:45px;
+height:45px;
 object-fit:contain;
 }
 
 .logo-area h2{
-font-size:24px;
+font-size:22px;
 font-weight:500;
 }
 
@@ -69,7 +64,7 @@ font-weight:500;
 .menu{
 display:flex;
 align-items:center;
-gap:22px;
+gap:28px;
 }
 
 .menu a{
@@ -82,16 +77,21 @@ font-weight:600;
 color:#0066cc;
 }
 
+/* CART */
+.menu a img{
+height:28px;
+}
+
 /* HERO */
 .hero{
 min-height:100vh;
-position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:60px 20px;
 background:url('4k-new-york.jpg') center/cover no-repeat;
+position:relative;
 }
 
 .hero::before{
@@ -101,7 +101,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0, 80, 180, 0.55);
+background:rgba(0,80,180,0.55);
 }
 
 .hero-content{
@@ -112,21 +112,21 @@ max-width:800px;
 
 .hero h1{
 font-size:55px;
-margin-bottom:15px;
 color:#fff;
+margin-bottom:15px;
 }
 
 .hero p{
 font-size:18px;
-margin-bottom:20px;
 color:#fff;
+margin-bottom:20px;
 }
 
 .btn{
 padding:12px 25px;
-border:none;
 background:#ff00aa;
 color:#fff;
+border:none;
 border-radius:6px;
 cursor:pointer;
 }
@@ -135,10 +135,10 @@ cursor:pointer;
 @media(max-width:768px){
 .top-bar,
 .navbar{
-padding:15px 20px;
 flex-direction:column;
-gap:10px;
+padding:15px 20px;
 text-align:center;
+gap:10px;
 }
 
 .hero h1{
@@ -159,47 +159,44 @@ font-size:35px;
 
     <div style="display:flex; gap:15px; align-items:center;">
 
-        <a href="https://t.me/smmpvaexpertts" target="_blank" style="color:white; text-decoration:none; display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
-                <path d="M9.04 16.47l-.39 5.52c.56 0 .8-.24 1.1-.54l2.6-2.5 5.4 3.97c.99.55 1.7.26 1.95-.92l3.55-16.7c.31-1.44-.52-2.01-1.48-1.65L1.4 9.5c-1.38.54-1.36 1.3-.24 1.65l5.6 1.75 12.98-8.17c.61-.38 1.17-.17.71.21"/>
-            </svg>
-            @GlobalTopIt
+        <a href="https://t.me/smmpvaexpertts" target="_blank" style="color:#fff; text-decoration:none; display:flex; align-items:center; gap:6px;">
+            Telegram: @GlobalTopIt
         </a>
 
-        <span style="display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5L4 8V6l8 5 8-5v2z"/>
-            </svg>
-            Globaltopit@gmail.com
+        <span>
+            Email: Globaltopit@gmail.com
         </span>
 
     </div>
+
 </div>
 
 <!-- NAVBAR -->
 <nav class="navbar container">
 
     <div class="logo-area">
-        <img src="Your-paragraph-text.png" alt="">
+        <img src="Your-paragraph-text.png">
         <h2>GLOBAL TOP IT 🌐</h2>
     </div>
 
     <div class="menu">
+
         <a href="#">Home</a>
         <a href="#">Bank Accounts ⌵</a>
         <a href="#">Crypto Accounts ⌵</a>
         <a href="#">Social Accounts ⌵</a>
         <a href="#">Shop</a>
 
+        <!-- CART -->
         <a href="/cart" style="position:relative; display:inline-block;">
-            <img src="add-to-cart.png" style="height:28px;" alt="cart">
+            <img src="add-to-cart.png">
 
             <span style="
                 position:absolute;
                 top:-6px;
                 right:-8px;
                 background:#0066cc;
-                color:white;
+                color:#fff;
                 font-size:10px;
                 width:16px;
                 height:16px;
