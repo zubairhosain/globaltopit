@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Top It</title>
 
-<!-- 🔵 FAVICON ICON -->
-<link rel="icon" type="image/png" href="Your-paragraph-text.png">
+<link rel="icon" href="Your-paragraph-text.png">
 
 <style>
 
 /* =========================
-   BASIC RESET
+   RESET
 ========================= */
 *{
 margin:0;
@@ -21,76 +20,92 @@ font-family:Arial;
 }
 
 /* =========================
-   🔵 TOP BLUE BAR
+   TOP BAR (BLUE TOP)
 ========================= */
 .top-bar{
 background:#0066cc;
 color:#fff;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 100px;
+
+/* 🔥 HEIGHT CONTROL */
+padding-top:15px;
+padding-bottom:15px;
+
+/* 🔥 SIDE SPACE CONTROL */
+padding-left:80px;
+padding-right:80px;
+
+/* 🔥 TEXT SIZE */
 font-size:15px;
 }
 
 /* LEFT TEXT */
 .top-left{
-padding-left:40px;
+padding-left:10px;
 }
 
-/* RIGHT AREA */
+/* RIGHT TEXT AREA */
 .top-right{
 display:flex;
-gap:20px;
-padding-right:40px;
-}
 
-/* RIGHT ITEMS */
-.top-right a,
-.top-right span{
-color:#fff;
-text-decoration:none;
+/* 🔥 GAP BETWEEN ITEMS */
+gap:20px;
+
+/* 🔥 MOVE RIGHT SIDE */
+margin-left:0px;
 }
 
 /* =========================
-   NAVBAR
+   NAVBAR (WHITE AREA)
 ========================= */
 .navbar{
-background:#fff;
 display:flex;
 justify-content:space-between;
 align-items:center;
 
-/* 👉 SIDE SPACE CONTROL (এটাই main control) */
 padding-top:15px;
 padding-bottom:15px;
-padding-left:60px;
-padding-right:30px;
+padding-left:80px;
+padding-right:80px;
 
 border-bottom:1px solid #eee;
+background:#fff;
 }
 
-/* LOGO AREA */
+/* =========================
+   LOGO AREA (LEFT SIDE)
+========================= */
 .logo{
 display:flex;
 align-items:center;
+
+/* 🔥 GAP BETWEEN LOGO + TEXT */
 gap:10px;
 
-/* 👉 LOGO MOVE CONTROL (এখানেই তুমি adjust করবে) */
-margin-left:150px;
+/* 🔥 MOVE LOGO LEFT/RIGHT */
+margin-left:0px;
 }
 
-/* LOGO IMAGE */
 .logo img{
 width:45px;
 height:45px;
 }
 
-/* MENU */
+/* =========================
+   MENU (RIGHT SIDE)
+========================= */
 .menu{
 display:flex;
 align-items:center;
-gap:5px;
+
+/* 🔥 GAP BETWEEN MENU ITEMS */
+gap:20px;
+
+/* 🔥 MOVE MENU LEFT/RIGHT */
+margin-left:0px;
 }
 
 .menu a{
@@ -99,7 +114,9 @@ color:#111;
 font-weight:600;
 }
 
-/* CART */
+/* =========================
+   CART ICON
+========================= */
 .cart{
 position:relative;
 }
@@ -123,18 +140,21 @@ justify-content:center;
 border-radius:50%;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+========================= */
 .hero{
 height:100vh;
-background:url('4k-new-york.jpg') center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
+text-align:center;
 position:relative;
 color:#fff;
-text-align:center;
+background:url('4k-new-york.jpg') center/cover;
 }
 
+/* DARK OVERLAY */
 .hero::before{
 content:"";
 position:absolute;
@@ -172,16 +192,16 @@ cursor:pointer;
 
 <body>
 
-<!-- 🔵 TOP BAR -->
+<!-- TOP BAR -->
 <div class="top-bar">
 
     <div class="top-left">
-        Trusted Global Service with Verified USA Accounts
+        Trusted Global Service with Verified Accounts
     </div>
 
     <div class="top-right">
-        <a href="#">Telegram: @GlobalTopIt</a>
-        <span>Email: Globaltopit@gmail.com</span>
+        Email: Globaltopit@gmail.com
+        Telegram: @GlobalTopIt
     </div>
 
 </div>
@@ -189,19 +209,22 @@ cursor:pointer;
 <!-- NAVBAR -->
 <div class="navbar">
 
+    <!-- LOGO -->
     <div class="logo">
         <img src="Your-paragraph-text.png">
-        <h2>GLOBAL TOP IT 🌐</h2>
+        <h2>GLOBAL TOP IT</h2>
     </div>
 
+    <!-- MENU -->
     <div class="menu">
 
         <a href="#">Home</a>
-        <a href="#">Bank Accounts ⌵</a>
-        <a href="#">Crypto Accounts ⌵</a>
-        <a href="#">Social Accounts ⌵</a>
+        <a href="#">Bank Accounts</a>
+        <a href="#">Crypto Accounts</a>
+        <a href="#">Social Accounts</a>
         <a href="#">Shop</a>
 
+        <!-- CART -->
         <div class="cart">
             <img src="add-to-cart.png">
             <span>0</span>
