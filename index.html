@@ -20,69 +20,62 @@ background:#fff;
 color:#000;
 }
 
-/* TOP BAR (RIGHT SIDE BUT NOT CORNER) */
+/* TOP BAR */
 .top-bar{
 background:#0066cc;
 display:flex;
-justify-content:flex-end;
-gap:25px;
-padding:20px 250px; /* 👉 more space from edges */
-font-size:16px;.
-}
-  
-.top-bar span{
+justify-content:space-between;
+align-items:center;
+padding:12px 60px;
+font-size:14px;
 color:#fff;
-font-weight:700;
+flex-wrap:wrap;
 }
-/* MAIN WRAPPER (GIVES SIDE SPACE) */
-.container{
-max-width:1200px;
-margin:auto;
+
+.top-right{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.top-bar a{
+color:#fff;
+text-decoration:none;
 }
 
 /* NAVBAR */
 .navbar{
-background:#fff;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:12px 10px; /* 👉 more side gap */
-  border: 6px solid white;
+padding:15px 60px;
+border-bottom:1px solid #ddd;
+flex-wrap:wrap;
 }
 
 /* LOGO */
-/* HEADER LOGO AREA */
 .logo-area{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    justify-content:flex-start;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
-/* LOGO IMAGE */
 .logo-area img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
+width:45px;
+height:45px;
+object-fit:contain;
 }
 
-/* WEBSITE NAME */
-.logo-area h2{
-    font-size:28px;
-    font-weight:400;
-    font-family: Arial, sans-serif;
-    letter-spacing:0.5px;
-    margin:0;
-}
 /* MENU */
 .menu{
 display:flex;
-gap:25px;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .menu a{
 text-decoration:none;
-color:#111;
+color:#000;
 font-weight:600;
 }
 
@@ -90,21 +83,29 @@ font-weight:600;
 color:#0066cc;
 }
 
-/* HERO WITH BLUE WATERMARK OVERLAY */
-.hero{
-min-height:100vh;
+/* CART */
+.cart{
 position:relative;
+}
+
+.cart img{
+width:40px;
+height:auto;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+min-height:85vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-padding:60px 20px;
-
-/* image */
+padding:40px;
 background:url('4k-new-york.jpg') center/cover no-repeat;
+position:relative;
 }
 
-/* BLUE OVERLAY */
 .hero::before{
 content:"";
 position:absolute;
@@ -112,57 +113,49 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0, 80, 180, 0.55); /* 👉 blue watermark */
+background:rgba(0,80,180,0.55);
 }
 
 .hero-content{
 position:relative;
 z-index:2;
-max-width:800px;
+max-width:700px;
+color:#fff;
 }
 
 .hero h1{
-font-size:55px;
+font-size:50px;
 margin-bottom:15px;
-color:#fff;
 }
 
 .hero p{
 font-size:18px;
 margin-bottom:20px;
-color:#fff;
 }
 
 .btn{
 padding:12px 25px;
-border:none;
 background:#ff00aa;
 color:#fff;
+border:none;
 border-radius:6px;
 cursor:pointer;
 }
 
+.btn:hover{
+background:#d6008a;
+}
+
 /* RESPONSIVE */
 @media(max-width:768px){
-
 .navbar{
 flex-direction:column;
 gap:15px;
-padding:15px 20px;
-}
-
-.menu{
-flex-wrap:wrap;
-justify-content:center;
 }
 
 .top-bar{
-justify-content:center;
-padding:10px 20px;
-}
-
-.hero h1{
-font-size:35px;
+flex-direction:column;
+text-align:center;
 }
 }
 </style>
@@ -171,38 +164,20 @@ font-size:35px;
 <body>
 
 <!-- TOP BAR -->
-<div style="background:#0066cc; color:white; display:flex; justify-content:space-between; align-items:center; padding:15px 250px; font-size:15px;">
+<div class="top-bar">
+<div>Trusted Global Service with Verified Accounts</div>
 
-    <div>
-        Trusted Global Service with Verified USA Accounts
-    </div>
-
-    <div style="display:flex; gap:20px; align-items:center;">
-
-        <!-- Telegram -->
-        <a href="https://t.me/smmpvaexpertts" target="_blank" style="color:white; text-decoration:none; display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
-                <path d="M9.04 16.47l-.39 5.52c.56 0 .8-.24 1.1-.54l2.6-2.5 5.4 3.97c.99.55 1.7.26 1.95-.92l3.55-16.7h0c.31-1.44-.52-2.01-1.48-1.65L1.4 9.5c-1.38.54-1.36 1.3-.24 1.65l5.6 1.75 12.98-8.17c.61-.38 1.17-.17.71.21"/>
-            </svg>
-            @GlobalTopIt
-        </a>
-
-        <!-- Email -->
-        <span style="display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
-                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5L4 8V6l8 5 8-5v2z"/>
-            </svg>
-            Globaltopit@gmail.com
-        </span>
-
-    </div>
+<div class="top-right">
+<a href="https://t.me/smmpvaexpertts">Telegram</a>
+<span>Globaltopit@gmail.com</span>
+</div>
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar container">
+<nav class="navbar">
 
 <div class="logo-area">
-<img src="Your-paragraph-text.png" alt="">
+<img src="Your-paragraph-text.png">
 <h2>GLOBAL TOP IT 🌐</h2>
 </div>
 
@@ -214,13 +189,18 @@ font-size:35px;
 <a href="#">Shop</a>
 </div>
 
+<!-- CART (SEPARATE) -->
+<div class="cart">
+<img src="add-to-cart.png" alt="Cart">
+</div>
+
 </nav>
 
 <!-- HERO -->
 <section class="hero">
 <div class="hero-content">
 <h1>Welcome To Global Top It</h1>
-<p>Secure digital services worldwide with trusted support and verified accounts.</p>
+<p>Secure digital services worldwide with trusted support.</p>
 <button class="btn">VISIT SHOP</button>
 </div>
 </section>
