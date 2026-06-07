@@ -199,24 +199,90 @@ font-size:35px;
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Navbar</title>
 
-<div class="logo-area">
-<img src="Your-paragraph-text.png" alt="">
-<h2>GLOBAL TOP IT 🌐</h2>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 30px;
+    border-bottom:1px solid #ddd;
+    background:#fff;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.left img{
+    height:40px;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:#0073e6;
+}
+
+.cart img{
+    width:40px;
+    height:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <!-- Left logo -->
+    <div class="left">
+        <img src="logo.png" alt="logo">
+        <h3>SMM PVA Expert</h3>
+    </div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Bank Accounts ⌵</a>
+        <a href="#">Crypto Accounts ⌵</a>
+        <a href="#">Social Accounts ⌵</a>
+        <a href="#">Shop</a>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart">
+        <img src="add-to-cart.png" alt="cart">
+    </div>
+
 </div>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Bank Accounts ⌵</a>
-<a href="#">Crypto Accounts ⌵</a>
-<a href="#">Social Accounts ⌵</a>
-<a href="#">Shop</a>
-<style>
-<img src="add-to-cart.png" class="cart-img" alt="Cart">
-{ 
-width:40px;
-height:center;
+</body>
+</html>
+
 } 
 </div>
 
