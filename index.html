@@ -29,7 +29,9 @@ align-items:center;
 padding:18px 250px;
 font-size:15px;
 color:white;
-border-bottom:1px solid rgba(255,255,255,0.3); /* 🔥 thin white border */
+
+/* 🔥 THINNER BOTTOM BORDER */
+border-bottom:1px solid rgba(255,255,255,0.15);
 }
 
 /* LEFT */
@@ -67,7 +69,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:12px 10px;
-border-bottom:1px solid #ddd; /* 🔥 thin bottom border */
+border-bottom:1px solid #ddd;
 position:relative;
 }
 
@@ -97,11 +99,10 @@ gap:20px;
 align-items:center;
 }
 
-/* 🔥 NORMAL FONT (NO BOLD) */
 .menu a{
 text-decoration:none;
 color:#111;
-font-weight:400; /* FIXED */
+font-weight:400;
 padding:10px;
 }
 
@@ -119,10 +120,10 @@ display:inline-block;
 .dropdown > a{
 display:block;
 padding:10px;
-font-weight:400; /* FIXED */
+font-weight:400;
 }
 
-/* DROPDOWN BOX (bigger now) */
+/* DROPDOWN BOX */
 .dropdown-content{
 display:none;
 position:absolute;
@@ -130,7 +131,7 @@ top:calc(100% + 20px);
 left:0;
 
 background:#fff;
-min-width:280px; /* 🔥 bigger than before */
+min-width:280px;
 border:1px solid #ddd;
 
 box-shadow:0 10px 20px rgba(0,0,0,0.12);
@@ -138,29 +139,18 @@ z-index:9999;
 overflow:hidden;
 }
 
-/* REMOVE GAP STRIP (no line issues now) */
-.dropdown::after{
-content:"";
-position:absolute;
-left:0;
-top:100%;
-width:100%;
-height:20px;
-background:transparent;
-}
-
 .dropdown:hover .dropdown-content{
 display:block;
 }
 
-/* 🔥 NO SEPARATION LINE BETWEEN ITEMS */
+/* 🔥 BIGGER DROPDOWN TEXT */
 .dropdown-content a{
 display:block;
-padding:12px 16px;
+padding:14px 18px;   /* increased */
 color:#000;
-font-size:14px;
+font-size:16px;      /* 🔥 bigger text */
 text-decoration:none;
-border-bottom:none; /* FIXED */
+border-bottom:none;
 }
 
 .dropdown-content a:hover{
@@ -199,7 +189,7 @@ background:red;
 border-radius:50%;
 }
 
-/* HERO (same) */
+/* HERO */
 .hero{
 min-height:100vh;
 position:relative;
@@ -305,7 +295,7 @@ Globaltopit@gmail.com
 
 <div class="logo-area">
 <img src="Your-paragraph-text.png" alt="">
-<h2>Global Top it </h2>
+<h2>GLOBAL TOP IT 🌐</h2>
 </div>
 
 <div class="menu">
