@@ -20,13 +20,13 @@ background:#fff;
 color:#000;
 }
 
-/* TOP BAR */
+/* TOP BAR (balanced size) */
 .top-bar{
 background:#0066cc;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 250px; /* reduced height */
+padding:14px 250px;  /* ঠিক balance করা হলো */
 font-size:15px;
 color:white;
 border-bottom:none;
@@ -114,6 +114,7 @@ display:inline-block;
 .dropdown > a{
 display:block;
 padding:10px;
+font-weight:400; /* MAIN CATEGORY NORMAL */
 }
 
 /* DROPDOWN BOX */
@@ -155,8 +156,8 @@ background:transparent;
 display:block;
 padding:14px 18px;
 
-font-size:16px;
-font-weight:400; /* NORMAL TEXT */
+font-size:15px;   /* একটু কমানো হলো */
+font-weight:400 !important;  /* FORCE NORMAL (important fix) */
 
 color:#000;
 text-decoration:none;
@@ -165,6 +166,7 @@ background:#fff;
 border-bottom:none;
 }
 
+/* hover */
 .dropdown-content a:hover{
 background:#f2f2f2;
 }
