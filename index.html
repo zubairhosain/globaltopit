@@ -20,7 +20,7 @@ background:#fff;
 color:#000;
 }
 
-/* TOP BAR (CLEAN BORDER FIX) */
+/* TOP BAR */
 .top-bar{
 background:#0066cc;
 display:flex;
@@ -30,13 +30,11 @@ padding:18px 250px;
 font-size:15px;
 color:white;
 
-/* 🔥 CLEAN FIX: remove unwanted line effect */
-border-bottom:0;
-box-shadow:none;
-outline:none;
+/* ❌ thin line removed */
+border-bottom:none;
 }
 
-/* LEFT CAPTION */
+/* LEFT CAPTION (BOLD + BIGGER) */
 .top-caption{
 font-size:17px;
 font-weight:700;
@@ -58,6 +56,12 @@ gap:6px;
 color:white;
 font-size:14px;
 text-decoration:none;
+}
+
+/* CONTAINER */
+.container{
+max-width:1200px;
+margin:auto;
 }
 
 /* NAVBAR */
@@ -104,50 +108,51 @@ font-weight:600;
 padding:10px;
 }
 
-/* ================= DROPDOWN FIX ================= */
+.menu a:hover{
+color:#0066cc;
+}
 
+/* DROPDOWN */
 .dropdown{
 position:relative;
 display:inline-block;
 }
 
-/* IMPORTANT FIX */
+.dropdown > a{
+display:block;
+padding:10px;
+}
+
 .dropdown-content{
 display:none;
 position:absolute;
-top:100%;
+top:calc(100% + 25px);
 left:0;
-margin-top:12px;
 
 background:#fff;
-min-width:260px;
+min-width:200px;
 
 border:1px solid #ddd;
+border-radius:12px;
 
-/* IMPORTANT: keep mouse inside gap safe */
-padding:5px 0;
+box-shadow:0 10px 20px rgba(0,0,0,0.12);
 
-z-index:99999;
+z-index:9999;
+overflow:hidden;
 }
 
-/* ITEM CLEAN */
 .dropdown-content a{
 display:block;
-padding:10px 14px;
-font-size:15px;
+padding:10px 12px;
 color:#000;
-text-decoration:none;
-
-/* REMOVE LINE STYLE COMPLETELY */
-border-bottom:none;
+font-size:14px;
+border-bottom:1px solid #eee;
 }
 
-/* hover effect */
 .dropdown-content a:hover{
 background:#f2f2f2;
 }
 
-/* ⭐ IMPORTANT FIX: keep menu alive */
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover{
 display:block;
@@ -162,32 +167,40 @@ align-items:center;
 
 .cart img{
 width:35px;
+height:auto;
+cursor:pointer;
 }
 
 .cart-count{
 position:absolute;
 top:-6px;
 right:-10px;
-background:red;
-color:#fff;
+
 width:20px;
 height:20px;
-font-size:12px;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
+font-size:12px;
+font-weight:bold;
+
+color:#fff;
+background:red;
 border-radius:50%;
 }
 
 /* HERO */
 .hero{
 min-height:100vh;
+position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+padding:60px 20px;
 background:url('4k-new-york.jpg') center/cover no-repeat;
-position:relative;
 }
 
 .hero::before{
@@ -197,17 +210,56 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.45);
+background:rgba(0, 80, 180, 0.55);
 }
 
 .hero-content{
 position:relative;
 z-index:2;
-color:#fff;
+max-width:800px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:55px;
+margin-bottom:15px;
+color:#fff;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+background:#ff00aa;
+color:#fff;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+padding:15px 20px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.top-bar{
+flex-direction:column;
+gap:10px;
+padding:10px 20px;
+text-align:center;
+}
 }
 </style>
 </head>
@@ -217,12 +269,30 @@ font-size:50px;
 <!-- TOP BAR -->
 <div class="top-bar">
 
+    <!-- LEFT CAPTION -->
     <div class="top-caption">
        GLOBAL SECURE USA & DIGITAL SERVICES
     </div>
 
+    <!-- RIGHT SIDE -->
     <div class="top-right">
-        @GlobalTopIt | globaltopit@gmail.com
+
+        <!-- TELEGRAM -->
+        <a class="top-item" href="https://t.me/smmpvaexpertts" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                <path d="M9.04 16.47l-.39 5.52c.56 0 .8-.24 1.1-.54l2.6-2.5 5.4 3.97c.99.55 1.7.26 1.95-.92l3.55-16.7c.31-1.44-.52-2.01-1.48-1.65L1.4 9.5c-1.38.54-1.36 1.3-.24 1.65l5.6 1.75 12.98-8.17c.61-.38 1.17-.17.71.21z"/>
+            </svg>
+            @GlobalTopIt
+        </a>
+
+        <!-- EMAIL -->
+        <div class="top-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Globaltopit@gmail.com
+        </div>
+
     </div>
 
 </div>
@@ -231,7 +301,7 @@ font-size:50px;
 <nav class="navbar container">
 
 <div class="logo-area">
-<img src="Your-paragraph-text.png">
+<img src="Your-paragraph-text.png" alt="">
 <h2>GLOBAL TOP IT 🌐</h2>
 </div>
 
@@ -240,36 +310,40 @@ font-size:50px;
 <a href="#">Home</a>
 
 <div class="dropdown">
-    <a href="#">Bank Accounts</a>
+    <a href="#">Bank Accounts ⌵</a>
     <div class="dropdown-content">
-        <a href="bank.html">USA Bank</a>
-        <a href="bank.html">UK Bank</a>
-        <a href="bank.html">Verified Accounts</a>
+        <a href="bank.html">Buy Verified Cash App Accounts</a>
+        <a href="bank.html">Buy Verified PayPal Accounts</a>
+        <a href="bank.html">Buy Verified Wise Accounts</a>
+        <a href="bank.html">Buy Verified Stripe Accounts</a>
+        <a href="bank.html">Buy Verified Square Accounts</a>
     </div>
 </div>
 
 <div class="dropdown">
-    <a href="#">Crypto Accounts</a>
+    <a href="#">Crypto Accounts ⌵</a>
     <div class="dropdown-content">
-        <a href="crypto.html">Binance</a>
-        <a href="crypto.html">Coinbase</a>
-        <a href="crypto.html">Wallets</a>
+        <a href="crypto.html">Buy Verified Binance Accounts</a>
+        <a href="crypto.html">Buy Verified Payoneer Accounts</a>
+        <a href="crypto.html">Buy Verified Ebay Accounts</a>
     </div>
 </div>
 
 <div class="dropdown">
-    <a href="#">Social Accounts</a>
+    <a href="#">Social Accounts ⌵</a>
     <div class="dropdown-content">
-        <a href="social.html">TikTok</a>
-        <a href="social.html">Facebook</a>
-        <a href="social.html">Instagram</a>
+        <a href="social.html">Buy Old TikTok Accounts</a>
+        <a href="social.html">Buy USA Facebook Accounts</a>
+        <a href="social.html">Buy Telegram Accounts</a>
+        <a href="social.html">Buy GitHub Accounts</a>
+        <a href="social.html">Buy Twitter Accounts</a>
     </div>
 </div>
 
 <a href="#">Shop</a>
 
 <div class="cart">
-    <img src="add-to-cart.png">
+    <img src="add-to-cart.png" alt="Cart">
     <span class="cart-count">0</span>
 </div>
 
@@ -281,6 +355,8 @@ font-size:50px;
 <section class="hero">
 <div class="hero-content">
 <h1>Welcome To Global Top It</h1>
+<p>Secure digital services worldwide with trusted support.</p>
+<button class="btn">VISIT SHOP</button>
 </div>
 </section>
 
